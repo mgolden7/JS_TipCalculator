@@ -12,13 +12,41 @@
     <div class="container1" id="container1">
         <h2 class="header" id="header">Tip Calculator</h2>
         <div class="calculator" id="calculator">
-            <label for="amount">bill amount</label>
-            <div>
-                <input id="amount" type="text">
-            <button class="dollarButton" id="dollarButton">
-                <img id="dollarSign" src="https://cdn-icons-png.flaticon.com/512/3840/3840696.png">
-            </button>
+            
+            <div class="calcDiv" id="billAmount">
+                <label for="amount">bill amount</label>
+                <input class="input" id="amount" type="number" min="0" placeholder="(enter bill amount)" required>
+                
             </div>
+            
+            <div class="calcDiv" id="billSplit">
+                <label for="guests">split bill</label>
+                <input class="input" id="guests" type="number" min="0" placeholder="(number of paying guests)" required> ways
+                
+            </div>
+            
+            <div class="calcDiv" id="tipPercentage">
+                <label for="tip">tip percentage</label>
+                <select class="input" id="tipPercentage">
+                    <option selected value = '0'>0%</option>
+                    <option value = '0.05'>5%</option>
+                    <option value = '0.1'>10%</option>
+                    <option value = '0.15'>15%</option>
+                    <option value = '0.2'>20%</option>
+                    <option value = '0.25'>25%</option>
+                    <option value = '0.3'>30%</option>
+                    <option value = '0.35'>35%</option>
+                    <option value = '0.4'>40%</option>
+                </select>
+            </div>
+            
+            <div class="calcDiv" id="dollarSignDiv">
+                <button class="button" id="button">
+                    <img id="dollarSign" src="https://cdn-icons-png.flaticon.com/512/3840/3840696.png">
+                </button>
+                
+            </div>
+            
         </div>
 
     </div>
