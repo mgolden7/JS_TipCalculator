@@ -38,7 +38,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: left;
-            border: 2px dotted white;
+            
             padding: 20px;
             font-family: 'Courier New', Courier, monospace;
             font-size: 30px;
@@ -54,7 +54,6 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: left;
-                border: 1px dotted purple;
                 margin: 10px;
                 padding: 5px;
                 
@@ -68,6 +67,7 @@ body {
                 }
 
                 .button {
+                    margin-top: 10px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -103,6 +103,30 @@ body {
                     overflow-wrap: anywhere;
                 }
 
-    
+    @media (max-width: 800px) {
+        .header {
+            font-size: 25px;
+        }
+        .calculator {
+            margin-top: 0px;
+        }
+        .calcDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+            padding: 5px;
+            font-size: 25px;
+            
+            
+        }
+        .input {
+            margin-left: 10px;
+            margin-right: 10px;
+            max-width: auto;
+            font-size: 16px;
+        }
+    }
 
         
