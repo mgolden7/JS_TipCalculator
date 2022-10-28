@@ -25,18 +25,18 @@
                 
             </div>
             
-            <div class="calcDiv" id="tipPercentage">
+            <div class="calcDiv" id="tipPercentageInput">
                 <label for="tip">tip percentage</label>
-                <select class="input" id="tipPercentage">
-                    <option selected value = '0'>0%</option>
-                    <option value = '0.05'>5%</option>
-                    <option value = '0.1'>10%</option>
-                    <option value = '0.15'>15%</option>
-                    <option value = '0.2'>20%</option>
-                    <option value = '0.25'>25%</option>
-                    <option value = '0.3'>30%</option>
-                    <option value = '0.35'>35%</option>
-                    <option value = '0.4'>40%</option>
+                <select class="input" id="tip" required>
+                    <option value = '0' selected>0%</option>
+                    <option value = '1.05'>5%</option>
+                    <option value = '1.1'>10%</option>
+                    <option value = '1.15'>15%</option>
+                    <option value = '1.2'>20%</option>
+                    <option value = '1.25'>25%</option>
+                    <option value = '1.3'>30%</option>
+                    <option value = '1.35'>35%</option>
+                    <option value = '1.4'>40%</option>
                 </select>
             </div>
             
@@ -48,7 +48,12 @@
             </div>
 
             <div class="calcDiv" id="output">
-                               
+                $<span class="outputSpan" id="billTotal">(bill total)</span> divided by
+                <span class="outputSpan" id="payingGuests">(how many guests are paying)</span>, equals 
+                $<span class="outputSpan" id="splitBill1">(new total)</span>.   
+                $<span class="outputSpan" id="splitBill2">(new total)</span> plus a
+                <span class="outputSpan" id="tipPercentage">(tip percentage)</span>% tip equals
+                <b><span class="outputSpan" id="total">(total)</span></b>.                      
             </div>
             
         </div>

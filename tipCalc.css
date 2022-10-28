@@ -20,12 +20,11 @@ body {
         width: 80vw;
         height: 90vh;
         position: relative;
+        font-family: 'Courier New', Courier, monospace;
     }
 
         .header {
-            /*border-bottom: 1px solid rgb(213, 212, 212);*/
             margin-top: 5px;
-            font-family: 'Courier New', Courier, monospace;
             font-size: 40px;
             color: white;
             text-shadow: 0px 3px 5px black;
@@ -38,10 +37,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: left;
-            
             padding: 20px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 30px;
             color: white;
             text-shadow: 0px 3px 5px black;
             max-height: 80vh;
@@ -56,6 +52,7 @@ body {
                 justify-content: left;
                 margin: 10px;
                 padding: 5px;
+                font-size: 28px;
                 
             }
 
@@ -65,68 +62,160 @@ body {
                     max-width: auto;
                     font-size: 20px;
                 }
+                    
 
-                .button {
-                    margin-top: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 0px;
-                    border-radius: 50%;
-                    border: none;
-                    box-shadow: 0px 5px 10px 0px rgb(49, 49, 49);
-                }
+                            .button {
+                                margin-top: 10px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 0px;
+                                border-radius: 50%;
+                                border: none;
+                                box-shadow: 0px 5px 10px 0px rgb(49, 49, 49);
+                            }
 
-                    .button:hover {
-                        padding: 1px;
-                    }
-                    .button:active {
-                        box-shadow: none;
-                        background-color: rgb(204, 204, 204);
-                    }
-        
-                #dollarSignDiv {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 5px;
-                }
-                
-                #dollarSign {
-                    height: 40px;
-                    width: 40px;
-                }
+                                .button:hover {
+                                    padding: 1px;
+                                }
+                                .button:active {
+                                    box-shadow: none;
+                                    background-color: rgb(204, 204, 204);
+                                }
+                    
+                            #dollarSignDiv {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 5px;
+                            }
+                            
+                            #dollarSign {
+                                height: 40px;
+                                width: 40px;
+                            }
 
                 #output {
                     max-width: inherit;
                     overflow-wrap: anywhere;
+                    border: 1px dotted blue;
+                    margin-top: 20px;
+                    display: inline-block;
+                    justify-content: left;
+                    align-items: left;
+                    font-size: 28px;
                 }
 
-    @media (max-width: 800px) {
-        .header {
-            font-size: 25px;
+        #billTotal {
+            font-size: 28px;
         }
-        .calculator {
-            margin-top: 0px;
+        #payingGuests {
+            font-size: 28px;
         }
-        .calcDiv {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 2px;
-            padding: 5px;
-            font-size: 25px;
-            
-            
+        #splitBill {
+            font-size: 28px;
         }
-        .input {
-            margin-left: 10px;
-            margin-right: 10px;
-            max-width: auto;
-            font-size: 16px;
+        #tipPercentage {
+            font-size: 28px;
         }
+        #total {
+            font-size: 30px;
+        }
+
+@media (max-width: 800px) {
+    .header {
+        font-size: 25px;
+    }
+    .calculator {
+        margin-top: 15px;
+        padding: 5px;
+    }
+    .calcDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+        padding: 5px;
+        font-size: 22px;
+    }
+    .input {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: auto;
+        font-size: 16px;
+        border-radius: 2px;
+        border: none;
+    }
+    .button {
+        margin: 2px;
+    }
+    
+    #output {
+        border: 1px dotted blue;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        font-size: 20px;
+        display: inline-block;
+        justify-content: left;
+        align-items: left;
     }
 
-        
+    #billTotal {
+        font-size: 22px;
+    }
+    #payingGuests {
+        font-size: 22px;
+    }
+    #splitBill {
+        font-size: 22px;
+    }
+    #tipPercentage {
+        font-size: 22px;
+    }
+    #total {
+        font-size: 22px;
+    }
+
+}
+@media (max-height: 500px) {
+    .header {
+        font-size: 20px;
+    }
+    .calculator {
+        margin-top: 15px;
+        padding: 5px;
+    }
+    .calcDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1px;
+        padding: 3px;
+        font-size: 14px;
+    }
+    .input {
+        font-size: 12px;
+        border-radius: 2px;
+        border: none;
+    }
+    .button {
+        margin: 1px;
+    }
+    #dollarSign{
+        width: 25px;
+        height: 25px;
+    }
+    
+    #output {
+        border: 1px dotted blue;
+        margin-top: 5px;
+        margin-bottom: 1px;
+        font-size: 14px;
+        display: inline-block;
+        justify-content: left;
+        align-items: left;
+    }
+}
